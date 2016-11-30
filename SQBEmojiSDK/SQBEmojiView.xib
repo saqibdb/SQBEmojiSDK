@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SQBEmojiView" id="iN0-l3-epB" customClass="SQBEmojiView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vw8-Rw-65f">
+                    <subviews>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdH-ro-Lxo">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gdH-ro-Lxo" secondAttribute="height" multiplier="1:1" id="vgi-gK-kkI"/>
+                            </constraints>
+                            <state key="normal" image="magGlass"/>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvS-j4-lXg">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="UvS-j4-lXg" secondAttribute="height" multiplier="1:1" id="O3e-uP-H2s"/>
+                            </constraints>
+                            <state key="normal" image="clock"/>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="emoji stickers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0G-Ff-Dqz">
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                    <color key="value" red="0.25098039220000001" green="0.52549019610000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="G0G-Ff-Dqz" firstAttribute="centerY" secondItem="gdH-ro-Lxo" secondAttribute="centerY" id="1gh-WR-zNu"/>
+                        <constraint firstAttribute="height" constant="45" id="6Jn-mh-bgc"/>
+                        <constraint firstItem="UvS-j4-lXg" firstAttribute="leading" secondItem="G0G-Ff-Dqz" secondAttribute="trailing" id="C5M-85-ONV"/>
+                        <constraint firstItem="G0G-Ff-Dqz" firstAttribute="leading" secondItem="gdH-ro-Lxo" secondAttribute="trailing" constant="8" id="DJz-d4-nHu"/>
+                        <constraint firstItem="gdH-ro-Lxo" firstAttribute="centerY" secondItem="Vw8-Rw-65f" secondAttribute="centerY" id="E8d-3x-epe"/>
+                        <constraint firstItem="gdH-ro-Lxo" firstAttribute="height" secondItem="Vw8-Rw-65f" secondAttribute="height" id="H3q-cD-P9N"/>
+                        <constraint firstItem="UvS-j4-lXg" firstAttribute="centerY" secondItem="Vw8-Rw-65f" secondAttribute="centerY" id="Lj5-fV-TDy"/>
+                        <constraint firstItem="G0G-Ff-Dqz" firstAttribute="height" secondItem="Vw8-Rw-65f" secondAttribute="height" id="ZTQ-NY-NMz"/>
+                        <constraint firstAttribute="trailing" secondItem="UvS-j4-lXg" secondAttribute="trailing" constant="8" id="cnc-cd-xQD"/>
+                        <constraint firstItem="gdH-ro-Lxo" firstAttribute="leading" secondItem="Vw8-Rw-65f" secondAttribute="leading" constant="8" id="d5X-HT-dtR"/>
+                        <constraint firstItem="UvS-j4-lXg" firstAttribute="height" secondItem="Vw8-Rw-65f" secondAttribute="height" constant="-10" id="khL-eI-ofQ"/>
+                        <constraint firstItem="UvS-j4-lXg" firstAttribute="width" secondItem="UvS-j4-lXg" secondAttribute="height" multiplier="1:1" id="wDJ-DV-zvT"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dr4-i2-IYd">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H0C-ze-zAF">
+                        <size key="itemSize" width="81" height="93"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dr4-i2-IYd" secondAttribute="bottom" id="7I6-GN-KfR"/>
+                <constraint firstItem="Vw8-Rw-65f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="W6C-kx-pNe"/>
+                <constraint firstItem="dr4-i2-IYd" firstAttribute="top" secondItem="Vw8-Rw-65f" secondAttribute="bottom" id="WKo-12-5sr"/>
+                <constraint firstItem="dr4-i2-IYd" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Xhd-km-ZlM"/>
+                <constraint firstItem="Vw8-Rw-65f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e8o-EE-Nr1"/>
+                <constraint firstItem="dr4-i2-IYd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uYS-X5-3HJ"/>
+                <constraint firstItem="Vw8-Rw-65f" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="y8i-AO-q1G"/>
+            </constraints>
+            <connections>
+                <outlet property="emojiCollectionView" destination="dr4-i2-IYd" id="SgW-ia-mIh"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="22"/>
+        </view>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="EmojiCollectionViewCell" reuseIdentifier="EmojiCollectionViewCell" id="wPs-DE-Yef" customClass="EmojiCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="81" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="81" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NdZ-7L-QT3"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu9-vX-lPF">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wu9-vX-lPF" firstAttribute="centerX" secondItem="wPs-DE-Yef" secondAttribute="centerX" id="7XW-FN-dAW"/>
+                <constraint firstItem="wu9-vX-lPF" firstAttribute="top" secondItem="NdZ-7L-QT3" secondAttribute="bottom" id="Pfa-ut-D47"/>
+                <constraint firstItem="NdZ-7L-QT3" firstAttribute="top" secondItem="wPs-DE-Yef" secondAttribute="topMargin" constant="-8" id="Vjo-sH-r23"/>
+                <constraint firstItem="NdZ-7L-QT3" firstAttribute="width" secondItem="wPs-DE-Yef" secondAttribute="width" id="WQo-hX-J8p"/>
+                <constraint firstItem="wu9-vX-lPF" firstAttribute="width" secondItem="wPs-DE-Yef" secondAttribute="width" id="iKU-0g-Vog"/>
+                <constraint firstItem="NdZ-7L-QT3" firstAttribute="height" secondItem="wPs-DE-Yef" secondAttribute="height" constant="-30" id="j42-G4-RkF"/>
+                <constraint firstItem="NdZ-7L-QT3" firstAttribute="centerX" secondItem="wPs-DE-Yef" secondAttribute="centerX" id="swc-fU-bAY"/>
+                <constraint firstAttribute="bottomMargin" secondItem="wu9-vX-lPF" secondAttribute="bottom" id="syY-zy-ccn"/>
+            </constraints>
+            <connections>
+                <outlet property="stickerImage" destination="NdZ-7L-QT3" id="9Os-4I-GWH"/>
+                <outlet property="stickerName" destination="wu9-vX-lPF" id="VsD-Ct-Tta"/>
+            </connections>
+            <point key="canvasLocation" x="-286.5" y="-266.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="clock" width="107" height="107"/>
+        <image name="magGlass" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		347A1ABE050693F54EC890C4 /* Pods_SQBEmojiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EC5157BD09D8E806D03705 /* Pods_SQBEmojiSDK.framework */; };
+		AF1AB70D1DEECDA900FB663D /* SQBEmojiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF1AB70C1DEECDA900FB663D /* SQBEmojiView.xib */; };
+		AF464FF61DEF0DDF00F14E80 /* SQBCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF464FF51DEF0DDF00F14E80 /* SQBCollectionViewCell.xib */; };
+		AFA6F4DD1DEEF52700051F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC1B1DED6B1600AB619B /* AppDelegate.m */; };
+		AFA6F4DF1DEEF52700051F83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC1E1DED6B1600AB619B /* ViewController.m */; };
+		AFA6F4E11DEEF52700051F83 /* EmojiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC381DED7FB500AB619B /* EmojiCollectionViewCell.m */; };
+		AFA6F4E21DEEF52700051F83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC181DED6B1600AB619B /* main.m */; };
+		AFA6F4E31DEEF52700051F83 /* SwiftTst.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC3B1DEDAEC100AB619B /* SwiftTst.swift */; };
+		AFA6F4E61DEEF52700051F83 /* SQBEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC411DEDCF4000AB619B /* SQBEmojiView.m */; };
+		AFB37B951DEEF55D002B9F65 /* Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC341DED74BC00AB619B /* Emoji.m */; };
+		AFB37B971DEEF55D002B9F65 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC311DED747C00AB619B /* Categories.m */; };
+		AFC6EC221DED6B1600AB619B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC6EC201DED6B1600AB619B /* Main.storyboard */; };
+		AFC6EC241DED6B1600AB619B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC6EC231DED6B1600AB619B /* Assets.xcassets */; };
+		AFC6EC271DED6B1600AB619B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC6EC251DED6B1600AB619B /* LaunchScreen.storyboard */; };
+		AFC6EC2F1DED6D6000AB619B /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC6EC2E1DED6D6000AB619B /* SafariServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E158D3C7251AF16AA16FCDA /* Pods-SQBEmojiSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQBEmojiSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQBEmojiSDK/Pods-SQBEmojiSDK.release.xcconfig"; sourceTree = "<group>"; };
+		26A6532AE83931C9F1AB66E8 /* Pods_SQBEmojiSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQBEmojiSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		424290A4FF869D0F81A35D1E /* Pods-SQBEmojiSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQBEmojiSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQBEmojiSDK/Pods-SQBEmojiSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		49EEABCA4F156D31E2AC5A75 /* Pods-SQBEmojiSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQBEmojiSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQBEmojiSDK/Pods-SQBEmojiSDK.release.xcconfig"; sourceTree = "<group>"; };
+		A4EC5157BD09D8E806D03705 /* Pods_SQBEmojiSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQBEmojiSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA896C29B7806D9C70803205 /* Pods-SQBEmojiSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQBEmojiSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQBEmojiSDK/Pods-SQBEmojiSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		AF1AB70C1DEECDA900FB663D /* SQBEmojiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQBEmojiView.xib; sourceTree = "<group>"; };
+		AF464FF51DEF0DDF00F14E80 /* SQBCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQBCollectionViewCell.xib; sourceTree = "<group>"; };
+		AFC6EC141DED6B1600AB619B /* SQBEmojiSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQBEmojiSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC6EC181DED6B1600AB619B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFC6EC1A1DED6B1600AB619B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AFC6EC1B1DED6B1600AB619B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFC6EC1D1DED6B1600AB619B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AFC6EC1E1DED6B1600AB619B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AFC6EC211DED6B1600AB619B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFC6EC231DED6B1600AB619B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFC6EC261DED6B1600AB619B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFC6EC281DED6B1600AB619B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFC6EC2E1DED6D6000AB619B /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		AFC6EC301DED747C00AB619B /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		AFC6EC311DED747C00AB619B /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
+		AFC6EC331DED74BC00AB619B /* Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emoji.h; sourceTree = "<group>"; };
+		AFC6EC341DED74BC00AB619B /* Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emoji.m; sourceTree = "<group>"; };
+		AFC6EC371DED7FB500AB619B /* EmojiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCollectionViewCell.h; sourceTree = "<group>"; };
+		AFC6EC381DED7FB500AB619B /* EmojiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCollectionViewCell.m; sourceTree = "<group>"; };
+		AFC6EC3A1DEDAEC000AB619B /* SQBEmojiSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQBEmojiSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		AFC6EC3B1DEDAEC100AB619B /* SwiftTst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTst.swift; sourceTree = "<group>"; };
+		AFC6EC401DEDCF4000AB619B /* SQBEmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBEmojiView.h; sourceTree = "<group>"; };
+		AFC6EC411DEDCF4000AB619B /* SQBEmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBEmojiView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFC6EC111DED6B1600AB619B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC6EC2F1DED6D6000AB619B /* SafariServices.framework in Frameworks */,
+				347A1ABE050693F54EC890C4 /* Pods_SQBEmojiSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1598EEC87B6944A75A85D02E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA896C29B7806D9C70803205 /* Pods-SQBEmojiSDK.debug.xcconfig */,
+				49EEABCA4F156D31E2AC5A75 /* Pods-SQBEmojiSDK.release.xcconfig */,
+				424290A4FF869D0F81A35D1E /* Pods-SQBEmojiSDK.debug.xcconfig */,
+				1E158D3C7251AF16AA16FCDA /* Pods-SQBEmojiSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A3AF370DB39F4D1852A36F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6EC2E1DED6D6000AB619B /* SafariServices.framework */,
+				26A6532AE83931C9F1AB66E8 /* Pods_SQBEmojiSDK.framework */,
+				A4EC5157BD09D8E806D03705 /* Pods_SQBEmojiSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFC6EC0B1DED6B1600AB619B = {
+			isa = PBXGroup;
+			children = (
+				AFC6EC161DED6B1600AB619B /* SQBEmojiSDK */,
+				AFC6EC151DED6B1600AB619B /* Products */,
+				1598EEC87B6944A75A85D02E /* Pods */,
+				6A3AF370DB39F4D1852A36F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFC6EC151DED6B1600AB619B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6EC141DED6B1600AB619B /* SQBEmojiSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFC6EC161DED6B1600AB619B /* SQBEmojiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6EC361DED758200AB619B /* MVC Classes */,
+				AFC6EC1A1DED6B1600AB619B /* AppDelegate.h */,
+				AFC6EC1B1DED6B1600AB619B /* AppDelegate.m */,
+				AFC6EC1D1DED6B1600AB619B /* ViewController.h */,
+				AFC6EC1E1DED6B1600AB619B /* ViewController.m */,
+				AFC6EC201DED6B1600AB619B /* Main.storyboard */,
+				AFC6EC231DED6B1600AB619B /* Assets.xcassets */,
+				AFC6EC251DED6B1600AB619B /* LaunchScreen.storyboard */,
+				AFC6EC281DED6B1600AB619B /* Info.plist */,
+				AFC6EC171DED6B1600AB619B /* Supporting Files */,
+				AFC6EC3B1DEDAEC100AB619B /* SwiftTst.swift */,
+				AFC6EC3A1DEDAEC000AB619B /* SQBEmojiSDK-Bridging-Header.h */,
+				AFC6EC401DEDCF4000AB619B /* SQBEmojiView.h */,
+				AFC6EC411DEDCF4000AB619B /* SQBEmojiView.m */,
+				AF464FF51DEF0DDF00F14E80 /* SQBCollectionViewCell.xib */,
+				AFC6EC371DED7FB500AB619B /* EmojiCollectionViewCell.h */,
+				AFC6EC381DED7FB500AB619B /* EmojiCollectionViewCell.m */,
+				AF1AB70C1DEECDA900FB663D /* SQBEmojiView.xib */,
+			);
+			path = SQBEmojiSDK;
+			sourceTree = "<group>";
+		};
+		AFC6EC171DED6B1600AB619B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6EC181DED6B1600AB619B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFC6EC361DED758200AB619B /* MVC Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6EC331DED74BC00AB619B /* Emoji.h */,
+				AFC6EC341DED74BC00AB619B /* Emoji.m */,
+				AFC6EC301DED747C00AB619B /* Categories.h */,
+				AFC6EC311DED747C00AB619B /* Categories.m */,
+			);
+			name = "MVC Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFC6EC131DED6B1600AB619B /* SQBEmojiSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC6EC2B1DED6B1600AB619B /* Build configuration list for PBXNativeTarget "SQBEmojiSDK" */;
+			buildPhases = (
+				C909E8CE5E7D098EAF7F9EC2 /* [CP] Check Pods Manifest.lock */,
+				AFC6EC101DED6B1600AB619B /* Sources */,
+				AFC6EC111DED6B1600AB619B /* Frameworks */,
+				AFC6EC121DED6B1600AB619B /* Resources */,
+				000566A5C67DA986D1FA8133 /* [CP] Embed Pods Frameworks */,
+				65B7B832CF8D88B7E9ED1F2F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQBEmojiSDK;
+			productName = SQBEmojiSDK;
+			productReference = AFC6EC141DED6B1600AB619B /* SQBEmojiSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFC6EC0C1DED6B1600AB619B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = iBuildX;
+				TargetAttributes = {
+					AFC6EC131DED6B1600AB619B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HJG6BM4YN7;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AFC6EC0F1DED6B1600AB619B /* Build configuration list for PBXProject "SQBEmojiSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFC6EC0B1DED6B1600AB619B;
+			productRefGroup = AFC6EC151DED6B1600AB619B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFC6EC131DED6B1600AB619B /* SQBEmojiSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFC6EC121DED6B1600AB619B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC6EC271DED6B1600AB619B /* LaunchScreen.storyboard in Resources */,
+				AFC6EC241DED6B1600AB619B /* Assets.xcassets in Resources */,
+				AF1AB70D1DEECDA900FB663D /* SQBEmojiView.xib in Resources */,
+				AFC6EC221DED6B1600AB619B /* Main.storyboard in Resources */,
+				AF464FF61DEF0DDF00F14E80 /* SQBCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		000566A5C67DA986D1FA8133 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQBEmojiSDK/Pods-SQBEmojiSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65B7B832CF8D88B7E9ED1F2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQBEmojiSDK/Pods-SQBEmojiSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C909E8CE5E7D098EAF7F9EC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFC6EC101DED6B1600AB619B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB37B951DEEF55D002B9F65 /* Emoji.m in Sources */,
+				AFB37B971DEEF55D002B9F65 /* Categories.m in Sources */,
+				AFA6F4DD1DEEF52700051F83 /* AppDelegate.m in Sources */,
+				AFA6F4DF1DEEF52700051F83 /* ViewController.m in Sources */,
+				AFA6F4E11DEEF52700051F83 /* EmojiCollectionViewCell.m in Sources */,
+				AFA6F4E21DEEF52700051F83 /* main.m in Sources */,
+				AFA6F4E31DEEF52700051F83 /* SwiftTst.swift in Sources */,
+				AFA6F4E61DEEF52700051F83 /* SQBEmojiView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFC6EC201DED6B1600AB619B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC6EC211DED6B1600AB619B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFC6EC251DED6B1600AB619B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC6EC261DED6B1600AB619B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFC6EC291DED6B1600AB619B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFC6EC2A1DED6B1600AB619B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFC6EC2C1DED6B1600AB619B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424290A4FF869D0F81A35D1E /* Pods-SQBEmojiSDK.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HJG6BM4YN7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SQBEmojiSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saqibdb.SQBEmojiSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQBEmojiSDK/SQBEmojiSDK-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AFC6EC2D1DED6B1600AB619B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E158D3C7251AF16AA16FCDA /* Pods-SQBEmojiSDK.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HJG6BM4YN7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SQBEmojiSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saqibdb.SQBEmojiSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQBEmojiSDK/SQBEmojiSDK-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFC6EC0F1DED6B1600AB619B /* Build configuration list for PBXProject "SQBEmojiSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC6EC291DED6B1600AB619B /* Debug */,
+				AFC6EC2A1DED6B1600AB619B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC6EC2B1DED6B1600AB619B /* Build configuration list for PBXNativeTarget "SQBEmojiSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC6EC2C1DED6B1600AB619B /* Debug */,
+				AFC6EC2D1DED6B1600AB619B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFC6EC0C1DED6B1600AB619B /* Project object */;
+}
