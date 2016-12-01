@@ -10,6 +10,7 @@
 		347A1ABE050693F54EC890C4 /* Pods_SQBEmojiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EC5157BD09D8E806D03705 /* Pods_SQBEmojiSDK.framework */; };
 		AF1AB70D1DEECDA900FB663D /* SQBEmojiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF1AB70C1DEECDA900FB663D /* SQBEmojiView.xib */; };
 		AF464FF61DEF0DDF00F14E80 /* SQBCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF464FF51DEF0DDF00F14E80 /* SQBCollectionViewCell.xib */; };
+		AF9238B21DF030A400C93B83 /* UIColor+SQBFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9238B11DF030A400C93B83 /* UIColor+SQBFlatColors.m */; };
 		AFA6F4DD1DEEF52700051F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC1B1DED6B1600AB619B /* AppDelegate.m */; };
 		AFA6F4DF1DEEF52700051F83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC1E1DED6B1600AB619B /* ViewController.m */; };
 		AFA6F4E11DEEF52700051F83 /* EmojiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC381DED7FB500AB619B /* EmojiCollectionViewCell.m */; };
@@ -33,6 +34,8 @@
 		AA896C29B7806D9C70803205 /* Pods-SQBEmojiSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQBEmojiSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQBEmojiSDK/Pods-SQBEmojiSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1AB70C1DEECDA900FB663D /* SQBEmojiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQBEmojiView.xib; sourceTree = "<group>"; };
 		AF464FF51DEF0DDF00F14E80 /* SQBCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQBCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF9238B01DF030A400C93B83 /* UIColor+SQBFlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SQBFlatColors.h"; sourceTree = "<group>"; };
+		AF9238B11DF030A400C93B83 /* UIColor+SQBFlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SQBFlatColors.m"; sourceTree = "<group>"; };
 		AFC6EC141DED6B1600AB619B /* SQBEmojiSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQBEmojiSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC6EC181DED6B1600AB619B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFC6EC1A1DED6B1600AB619B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 		AFC6EC361DED758200AB619B /* MVC Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AF9238B01DF030A400C93B83 /* UIColor+SQBFlatColors.h */,
+				AF9238B11DF030A400C93B83 /* UIColor+SQBFlatColors.m */,
 				AFC6EC331DED74BC00AB619B /* Emoji.h */,
 				AFC6EC341DED74BC00AB619B /* Emoji.m */,
 				AFC6EC301DED747C00AB619B /* Categories.h */,
@@ -283,6 +288,7 @@
 				AFA6F4DD1DEEF52700051F83 /* AppDelegate.m in Sources */,
 				AFA6F4DF1DEEF52700051F83 /* ViewController.m in Sources */,
 				AFA6F4E11DEEF52700051F83 /* EmojiCollectionViewCell.m in Sources */,
+				AF9238B21DF030A400C93B83 /* UIColor+SQBFlatColors.m in Sources */,
 				AFA6F4E21DEEF52700051F83 /* main.m in Sources */,
 				AFA6F4E31DEEF52700051F83 /* SwiftTst.swift in Sources */,
 				AFA6F4E61DEEF52700051F83 /* SQBEmojiView.m in Sources */,

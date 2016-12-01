@@ -12,6 +12,7 @@
 #import "EmojiCollectionViewCell.h"
 #import "Emoji.h"
 #import "SQBEmojiSDK-Bridging-Header.h"
+#import "UIColor+SQBFlatColors.h"
 @implementation SQBEmojiView{
     NSArray *categories ;
     NSArray *emojis ;
@@ -185,11 +186,12 @@
     cell.stickerName.text = stickerName ;
     cell.stickerImage.image = nil ;
     FaveButton *newBtn = [[FaveButton alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.height - 40, cell.frame.size.height - 40) faveIconNormal:[UIImage imageNamed:@"heartIcon"]] ;
-    [newBtn setSelectedColor:[UIColor greenColor]] ;
-    [newBtn setDotSecondColor:[UIColor blueColor]] ;
-    [newBtn setDotFirstColor:[UIColor greenColor]] ;
-    [newBtn setCircleFromColor:[UIColor blueColor]] ;
-    [newBtn setCircleToColor:[UIColor greenColor]] ;
+    [newBtn setNormalColor:[UIColor randomFlatLightColor]] ;
+    [newBtn setSelectedColor:[UIColor randomFlatLightColor]] ;
+    [newBtn setDotSecondColor:[UIColor randomFlatLightColor]] ;
+    [newBtn setDotFirstColor:[UIColor randomFlatDarkColor]] ;
+    [newBtn setCircleFromColor:[UIColor randomFlatLightColor]] ;
+    [newBtn setCircleToColor:[UIColor randomFlatDarkColor]] ;
     [cell addSubview:newBtn];
     newBtn.center = CGPointMake( cell.bounds.size.width / 2, (cell.bounds.size.height-30)/2 );
     dispatch_async(dispatch_get_global_queue(0,0), ^{
@@ -207,6 +209,7 @@
     });
     return cell;
 }
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if (emojiSelected) {
         Emoji *emoji = emojis[indexPath.row] ;
