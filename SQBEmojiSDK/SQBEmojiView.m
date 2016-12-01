@@ -18,6 +18,61 @@
     BOOL emojiSelected ;
 }
 
+- (IBAction)magnifyingAction:(id)sender {
+    UIButton *btn = (UIButton *)sender ;
+    [btn setImage:[UIImage imageNamed:@"magGlass"] forState:UIControlStateNormal] ;
+    btn.userInteractionEnabled = NO ;
+    emojiSelected = NO ;
+    emojis = [[NSArray alloc] init] ;
+    [self.emojiView.emojiCollectionView reloadData] ;
+}
+
+- (IBAction)historyAction:(id)sender {
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField.returnKeyType==UIReturnKeyDefault)
+    {
+        //Your Return Key code
+    }
+    else if(textField.returnKeyType==UIReturnKeySearch)
+    {
+        //Your search key code
+        if (textField.text.length) {
+            NSMutableArray *emojisFound = [[NSMutableArray alloc] init] ;
+            for (Categories *category in categories) {
+                for (Emoji *emoji in category.Emojis) {
+                    if ([[emoji.Name lowercaseString] containsString:[textField.text lowercaseString]]) {
+                        [emojisFound addObject:emoji] ;
+                    }
+                }
+                
+            }
+            if (emojisFound.count) {
+                emojis = [[NSArray alloc] initWithArray:emojisFound] ;
+                emojiSelected = YES ;
+                [self.emojiView.magnifyingBtn setImage:[UIImage imageNamed:@"backIcon"] forState:UIControlStateNormal] ;
+                self.emojiView.magnifyingBtn.userInteractionEnabled = YES ;
+            }
+            else{
+                
+            }
+            
+        }
+        else{
+            emojis = [[NSArray alloc] init] ;
+            emojiSelected = NO ;
+            [self magnifyingAction:nil] ;
+        }
+        [self.emojiView.emojiCollectionView reloadData] ;
+        NSLog(@"Text to Search = %@" , textField.text) ;
+        [textField resignFirstResponder] ;
+        
+    }
+    return YES ;
+}
+
 -(void)setupSQBEmojis{
     
 
@@ -29,7 +84,12 @@
     //[self addSubview:self.emojiCollectionView] ;
     self.emojiView.emojiCollectionView.delegate = self ;
     self.emojiView.emojiCollectionView.dataSource = self ;
+    self.emojiView.emojiSearchText.delegate = self ;
     [self.emojiView.emojiCollectionView registerNib:[UINib nibWithNibName:@"SQBCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"EmojiCollectionViewCell"];
+    
+    [self.emojiView.magnifyingBtn addTarget:self
+                                     action:@selector(magnifyingAction:)
+       forControlEvents:UIControlEventTouchUpInside];
 
     if (backendless.userService.currentUser) {
         [backendless.userService isValidUserToken:
@@ -128,7 +188,7 @@
             return;
         dispatch_async(dispatch_get_main_queue(), ^{
             [newBtn animateSelect:YES duration:1.0] ;
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
                 cell.stickerImage.image = [UIImage imageWithData: data] ;
                 [cell bringSubviewToFront:cell.stickerImage] ;
                 [newBtn removeFromSuperview];
@@ -149,6 +209,8 @@
         emojis = category.Emojis ;
         [self.emojiView.emojiCollectionView reloadData] ;
         emojiSelected = YES ;
+        [self.emojiView.magnifyingBtn setImage:[UIImage imageNamed:@"backIcon"] forState:UIControlStateNormal] ;
+        self.emojiView.magnifyingBtn.userInteractionEnabled = YES ;
     }
 }
 /*

@@ -9,12 +9,20 @@
 #import <UIKit/UIKit.h>
 @protocol SQBEmojiDelegate;
 
-@interface SQBEmojiView : UIView <UICollectionViewDelegate , UICollectionViewDataSource>
+@interface SQBEmojiView : UIView <UICollectionViewDelegate , UICollectionViewDataSource , UITextFieldDelegate>
 
 @property (nonatomic, weak) id<SQBEmojiDelegate> delegate;
 
+
+
+@property (weak, nonatomic) IBOutlet UITextField *emojiSearchText;
+
+
 @property (weak, nonatomic) IBOutlet UICollectionView *emojiCollectionView;
 @property (weak, nonatomic) SQBEmojiView *emojiView;
+@property (weak, nonatomic) IBOutlet UIButton *magnifyingBtn;
+- (IBAction)magnifyingAction:(id)sender;
+- (IBAction)historyAction:(id)sender;
 
 -(void)setupSQBEmojis ;
 
