@@ -25,6 +25,9 @@
     emojiSelected = NO ;
     emojis = [[NSArray alloc] init] ;
     [self.emojiView.emojiCollectionView reloadData] ;
+    self.emojiView.infoView.hidden = YES ;
+    self.emojiView.emojiSearchText.text = @"" ;
+    [self.emojiView.emojiSearchText resignFirstResponder] ;
 }
 
 - (IBAction)historyAction:(id)sender {
@@ -54,9 +57,11 @@
                 emojiSelected = YES ;
                 [self.emojiView.magnifyingBtn setImage:[UIImage imageNamed:@"backIcon"] forState:UIControlStateNormal] ;
                 self.emojiView.magnifyingBtn.userInteractionEnabled = YES ;
+                self.emojiView.infoView.hidden = YES ;
             }
             else{
-                
+                self.emojiView.infoView.hidden = NO ;
+                self.emojiView.infoText.text = [NSString stringWithFormat: @"No Emojis Found for %@" , textField.text] ;
             }
             
         }
@@ -64,6 +69,8 @@
             emojis = [[NSArray alloc] init] ;
             emojiSelected = NO ;
             [self magnifyingAction:nil] ;
+            self.emojiView.infoView.hidden = YES ;
+
         }
         [self.emojiView.emojiCollectionView reloadData] ;
         NSLog(@"Text to Search = %@" , textField.text) ;
@@ -110,6 +117,7 @@
                                                 }
                                                 else {
                                                     /// TODO No internet
+                                                    self.emojiView.infoText.text = @"Cannot Connect to Emoji Server. Please check you internet connection." ;
                                                 }
                                             }];
     }
@@ -131,6 +139,7 @@
         [self loadStickers] ;
     } error:^(Fault *error) {
         /// TODO No internet
+        self.emojiView.infoText.text = @"Cannot Connect to Emoji Server. Please check you internet connection." ;
     }];
 }
 -(void)loadStickers {
@@ -138,8 +147,9 @@
         NSLog(@"Total Objects count = %lu" , (unsigned long)collection.data.count) ;
         categories = collection.data ;
         [self.emojiView.emojiCollectionView reloadData] ;
+        self.emojiView.infoView.hidden = YES ;
     } error:^(Fault *error) {
-        
+        self.emojiView.infoText.text = @"Cannot Connect to Emoji Server. Please check you internet connection." ;
     } ] ;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

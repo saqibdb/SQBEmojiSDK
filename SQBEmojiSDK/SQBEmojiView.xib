@@ -70,23 +70,45 @@
                     </collectionViewFlowLayout>
                     <cells/>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJQ-Zi-NcM">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-F6-phK">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="aDp-F6-phK" firstAttribute="centerY" secondItem="rJQ-Zi-NcM" secondAttribute="centerY" id="QdP-dx-y9x"/>
+                        <constraint firstItem="aDp-F6-phK" firstAttribute="height" secondItem="rJQ-Zi-NcM" secondAttribute="height" id="XRG-Rp-by9"/>
+                        <constraint firstItem="aDp-F6-phK" firstAttribute="centerX" secondItem="rJQ-Zi-NcM" secondAttribute="centerX" id="cqI-0E-VF5"/>
+                        <constraint firstItem="aDp-F6-phK" firstAttribute="width" secondItem="rJQ-Zi-NcM" secondAttribute="width" id="vv3-OD-Ejz"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="dr4-i2-IYd" secondAttribute="bottom" id="7I6-GN-KfR"/>
+                <constraint firstItem="rJQ-Zi-NcM" firstAttribute="centerX" secondItem="dr4-i2-IYd" secondAttribute="centerX" id="N0T-d6-15h"/>
+                <constraint firstItem="rJQ-Zi-NcM" firstAttribute="height" secondItem="dr4-i2-IYd" secondAttribute="height" id="O6y-Ev-oLq"/>
                 <constraint firstItem="Vw8-Rw-65f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="W6C-kx-pNe"/>
                 <constraint firstItem="dr4-i2-IYd" firstAttribute="top" secondItem="Vw8-Rw-65f" secondAttribute="bottom" id="WKo-12-5sr"/>
                 <constraint firstItem="dr4-i2-IYd" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Xhd-km-ZlM"/>
                 <constraint firstItem="Vw8-Rw-65f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e8o-EE-Nr1"/>
+                <constraint firstItem="rJQ-Zi-NcM" firstAttribute="width" secondItem="dr4-i2-IYd" secondAttribute="width" id="hoZ-f8-6PG"/>
+                <constraint firstItem="rJQ-Zi-NcM" firstAttribute="centerY" secondItem="dr4-i2-IYd" secondAttribute="centerY" id="jRB-qc-hnV"/>
                 <constraint firstItem="dr4-i2-IYd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uYS-X5-3HJ"/>
                 <constraint firstItem="Vw8-Rw-65f" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="y8i-AO-q1G"/>
             </constraints>
             <connections>
                 <outlet property="emojiCollectionView" destination="dr4-i2-IYd" id="SgW-ia-mIh"/>
                 <outlet property="emojiSearchText" destination="G0G-Ff-Dqz" id="3aF-y1-nuc"/>
+                <outlet property="infoText" destination="aDp-F6-phK" id="45y-OR-P8W"/>
+                <outlet property="infoView" destination="rJQ-Zi-NcM" id="V4R-d5-OHb"/>
                 <outlet property="magnifyingBtn" destination="gdH-ro-Lxo" id="RlP-Mv-Nmw"/>
             </connections>
-            <point key="canvasLocation" x="19" y="22"/>
+            <point key="canvasLocation" x="18.5" y="21.5"/>
         </view>
     </objects>
     <resources>

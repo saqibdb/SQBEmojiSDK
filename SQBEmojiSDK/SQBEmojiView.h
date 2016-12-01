@@ -21,6 +21,12 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *emojiCollectionView;
 @property (weak, nonatomic) SQBEmojiView *emojiView;
 @property (weak, nonatomic) IBOutlet UIButton *magnifyingBtn;
+@property (weak, nonatomic) IBOutlet UIView *infoView;
+@property (weak, nonatomic) IBOutlet UILabel *infoText;
+
+
+
+
 - (IBAction)magnifyingAction:(id)sender;
 - (IBAction)historyAction:(id)sender;
 
