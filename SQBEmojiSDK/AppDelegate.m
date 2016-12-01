@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <Backendless.h>
 
 @interface AppDelegate ()
 
@@ -18,7 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [backendless initApp:@"75595759-816A-07D7-FFE0-E59F90B7E900" secret:@"0AB77516-2A9B-D642-FF10-F7BC36A47500" version:@"v1"];
 
     return YES;
 }

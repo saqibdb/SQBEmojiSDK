@@ -13,7 +13,7 @@
 		AF9238B21DF030A400C93B83 /* UIColor+SQBFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9238B11DF030A400C93B83 /* UIColor+SQBFlatColors.m */; };
 		AFA6F4DD1DEEF52700051F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC1B1DED6B1600AB619B /* AppDelegate.m */; };
 		AFA6F4DF1DEEF52700051F83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC1E1DED6B1600AB619B /* ViewController.m */; };
-		AFA6F4E11DEEF52700051F83 /* EmojiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC381DED7FB500AB619B /* EmojiCollectionViewCell.m */; };
+		AFA6F4E11DEEF52700051F83 /* SQBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC381DED7FB500AB619B /* SQBCollectionViewCell.m */; };
 		AFA6F4E21DEEF52700051F83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC181DED6B1600AB619B /* main.m */; };
 		AFA6F4E31DEEF52700051F83 /* SwiftTst.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC3B1DEDAEC100AB619B /* SwiftTst.swift */; };
 		AFA6F4E61DEEF52700051F83 /* SQBEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6EC411DEDCF4000AB619B /* SQBEmojiView.m */; };
@@ -36,6 +36,7 @@
 		AF464FF51DEF0DDF00F14E80 /* SQBCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQBCollectionViewCell.xib; sourceTree = "<group>"; };
 		AF9238B01DF030A400C93B83 /* UIColor+SQBFlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SQBFlatColors.h"; sourceTree = "<group>"; };
 		AF9238B11DF030A400C93B83 /* UIColor+SQBFlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SQBFlatColors.m"; sourceTree = "<group>"; };
+		AF9238B41DF032DE00C93B83 /* SQBConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQBConstants.h; sourceTree = "<group>"; };
 		AFC6EC141DED6B1600AB619B /* SQBEmojiSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQBEmojiSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC6EC181DED6B1600AB619B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFC6EC1A1DED6B1600AB619B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,8 +52,8 @@
 		AFC6EC311DED747C00AB619B /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
 		AFC6EC331DED74BC00AB619B /* Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emoji.h; sourceTree = "<group>"; };
 		AFC6EC341DED74BC00AB619B /* Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emoji.m; sourceTree = "<group>"; };
-		AFC6EC371DED7FB500AB619B /* EmojiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCollectionViewCell.h; sourceTree = "<group>"; };
-		AFC6EC381DED7FB500AB619B /* EmojiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCollectionViewCell.m; sourceTree = "<group>"; };
+		AFC6EC371DED7FB500AB619B /* SQBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBCollectionViewCell.h; sourceTree = "<group>"; };
+		AFC6EC381DED7FB500AB619B /* SQBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBCollectionViewCell.m; sourceTree = "<group>"; };
 		AFC6EC3A1DEDAEC000AB619B /* SQBEmojiSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQBEmojiSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		AFC6EC3B1DEDAEC100AB619B /* SwiftTst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTst.swift; sourceTree = "<group>"; };
 		AFC6EC401DEDCF4000AB619B /* SQBEmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBEmojiView.h; sourceTree = "<group>"; };
@@ -93,6 +94,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF9238B31DF031AB00C93B83 /* SQBView */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6EC401DEDCF4000AB619B /* SQBEmojiView.h */,
+				AFC6EC411DEDCF4000AB619B /* SQBEmojiView.m */,
+				AF464FF51DEF0DDF00F14E80 /* SQBCollectionViewCell.xib */,
+				AFC6EC371DED7FB500AB619B /* SQBCollectionViewCell.h */,
+				AFC6EC381DED7FB500AB619B /* SQBCollectionViewCell.m */,
+				AF1AB70C1DEECDA900FB663D /* SQBEmojiView.xib */,
+			);
+			name = SQBView;
+			sourceTree = "<group>";
+		};
 		AFC6EC0B1DED6B1600AB619B = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +128,7 @@
 		AFC6EC161DED6B1600AB619B /* SQBEmojiSDK */ = {
 			isa = PBXGroup;
 			children = (
+				AF9238B31DF031AB00C93B83 /* SQBView */,
 				AFC6EC361DED758200AB619B /* MVC Classes */,
 				AFC6EC1A1DED6B1600AB619B /* AppDelegate.h */,
 				AFC6EC1B1DED6B1600AB619B /* AppDelegate.m */,
@@ -126,12 +141,6 @@
 				AFC6EC171DED6B1600AB619B /* Supporting Files */,
 				AFC6EC3B1DEDAEC100AB619B /* SwiftTst.swift */,
 				AFC6EC3A1DEDAEC000AB619B /* SQBEmojiSDK-Bridging-Header.h */,
-				AFC6EC401DEDCF4000AB619B /* SQBEmojiView.h */,
-				AFC6EC411DEDCF4000AB619B /* SQBEmojiView.m */,
-				AF464FF51DEF0DDF00F14E80 /* SQBCollectionViewCell.xib */,
-				AFC6EC371DED7FB500AB619B /* EmojiCollectionViewCell.h */,
-				AFC6EC381DED7FB500AB619B /* EmojiCollectionViewCell.m */,
-				AF1AB70C1DEECDA900FB663D /* SQBEmojiView.xib */,
 			);
 			path = SQBEmojiSDK;
 			sourceTree = "<group>";
@@ -153,6 +162,7 @@
 				AFC6EC341DED74BC00AB619B /* Emoji.m */,
 				AFC6EC301DED747C00AB619B /* Categories.h */,
 				AFC6EC311DED747C00AB619B /* Categories.m */,
+				AF9238B41DF032DE00C93B83 /* SQBConstants.h */,
 			);
 			name = "MVC Classes";
 			sourceTree = "<group>";
@@ -287,7 +297,7 @@
 				AFB37B971DEEF55D002B9F65 /* Categories.m in Sources */,
 				AFA6F4DD1DEEF52700051F83 /* AppDelegate.m in Sources */,
 				AFA6F4DF1DEEF52700051F83 /* ViewController.m in Sources */,
-				AFA6F4E11DEEF52700051F83 /* EmojiCollectionViewCell.m in Sources */,
+				AFA6F4E11DEEF52700051F83 /* SQBCollectionViewCell.m in Sources */,
 				AF9238B21DF030A400C93B83 /* UIColor+SQBFlatColors.m in Sources */,
 				AFA6F4E21DEEF52700051F83 /* main.m in Sources */,
 				AFA6F4E31DEEF52700051F83 /* SwiftTst.swift in Sources */,

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EmojiCollectionViewCell : UICollectionViewCell
+@interface SQBCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *stickerImage;
 @property (weak, nonatomic) IBOutlet UILabel *stickerName;
 

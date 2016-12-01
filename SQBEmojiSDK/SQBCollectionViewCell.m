@@ -6,8 +6,8 @@
 //  Copyright © 2016 iBuildX. All rights reserved.
 //
 
-#import "EmojiCollectionViewCell.h"
+#import "SQBCollectionViewCell.h"
 
-@implementation EmojiCollectionViewCell
+@implementation SQBCollectionViewCell
 
 @end
